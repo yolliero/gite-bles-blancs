@@ -5,9 +5,12 @@
 <a (click)="switchLanguage('fr')">fr</a>
 </div>
 <nav>
-    <a  routerLink="home" >{{'NavBar.Home' | translate}}</a>
+    <a  routerLink="home"  [routerLinkActive]="'is-active'" [ngClass]="{
+        'is-active':isActive,
+        'is-not-selected':!isActive
+      }" >{{'NavBar.Home' | translate}}</a>
     &nbsp;
-    <a routerLink="gite"  >{{'NavBar.HolidayCottage' | translate}}</a>
+    <a routerLink="gite" [Class.is-not-selected]="!isActive" >{{'NavBar.HolidayCottage' | translate}}</a>
     &nbsp;
     <a > {{'NavBar.Find' | translate}}</a>
     &nbsp;
