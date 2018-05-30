@@ -258,7 +258,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--component html goes here -->\r\n<div class=\"menu\">\r\n<div class=\"Translate\">\r\n    <a (click)=\"switchLanguage('en')\">en</a> | \r\n<a (click)=\"switchLanguage('fr')\">fr</a>\r\n</div>\r\n<nav>\r\n    <a  routerLink=\"home\"  [routerLinkActive]=\"'is-active'\" [ngClass]=\"{\r\n        'is-active':isActive,\r\n        'is-not-selected':!isActive\r\n      }\" >{{'NavBar.Home' | translate}}</a>\r\n    &nbsp;\r\n    <a routerLink=\"gite\" [Class.is-not-selected]=\"!isActive\" >{{'NavBar.HolidayCottage' | translate}}</a>\r\n    &nbsp;\r\n    <a > {{'NavBar.Find' | translate}}</a>\r\n    &nbsp;\r\n    <a >{{'NavBar.Activities' | translate}}</a>\r\n    &nbsp;\r\n</nav>   \r\n</div>  \r\n  \r\n\r\n\r\n\r\n<!-- Creates a layout with a left-positioned sidenav and explicit content. -->\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<!--component html goes here -->\r\n<div class=\"menu\">\r\n<div class=\"Translate\">\r\n    <a (click)=\"switchLanguage('en')\">en</a> | \r\n<a (click)=\"switchLanguage('fr')\">fr</a>\r\n</div>\r\n<nav>\r\n    <a  routerLink=\"home\"  [routerLinkActive]=\"'is-active'\" >{{'NavBar.Home' | translate}}</a>\r\n    &nbsp;\r\n    <a routerLink=\"gite\" [routerLinkActive]=\"'is-active'\" >{{'NavBar.HolidayCottage' | translate}}</a>\r\n    &nbsp;\r\n    <a > {{'NavBar.Find' | translate}}</a>\r\n    &nbsp;\r\n    <a >{{'NavBar.Activities' | translate}}</a>\r\n    &nbsp;\r\n</nav>   \r\n</div>  \r\n  \r\n\r\n\r\n\r\n<!-- Creates a layout with a left-positioned sidenav and explicit content. -->\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
