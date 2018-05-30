@@ -89,7 +89,7 @@ module.exports = "img{\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n\r\n<base href=\"/\">\r\n\r\n<toolbar-toolbar></toolbar-toolbar>\r\n<img src=\"/assets/pano.jpg\"> -->\r\n\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n\r\n<base href=\"/\">\r\n\r\n<toolbar-toolbar></toolbar-toolbar>\r\n<img src=\"./assets/pano.jpg\"> -->\r\n\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
