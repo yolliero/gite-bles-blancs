@@ -89,7 +89,7 @@ module.exports = "img{\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n\r\n<base href=\"/\">\r\n\r\n<toolbar-toolbar></toolbar-toolbar>\r\n<img src=\"./assets/pano.jpg\"> -->\r\n\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n\r\n\r\n<base href=\"/\">\r\n\r\n<toolbar-toolbar></toolbar-toolbar>\r\n<!--\r\n<img src=\"./assets/pano.jpg\"> \r\n\r\n<router-outlet></router-outlet>\r\n-->"
 
 /***/ }),
 
@@ -120,7 +120,7 @@ var AppComponent = /** @class */ (function () {
     function AppComponent(translate) {
         this.translate = translate;
         this.title = 'app';
-        translate.setDefaultLang('en');
+        translate.setDefaultLang('fr');
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -277,7 +277,7 @@ module.exports = "<!--component html goes here -->\r\n<div class=\"menu\">\r\n<d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".menu {\n  width: 100%; }\n\nnav {\n  width: 100%;\n  margin-bottom: 10%; }\n\nnav a {\n  text-align: center;\n  padding: 10px; }\n\n.is-not-selected {\n  border-bottom: 10px solid #82b5a4; }\n\nnav a:hover {\n  background-color: #71a81d; }\n\n.is-active {\n  border-left: 5px solid grey;\n  border-right: 5px solid grey;\n  border-bottom: 10px solid white; }\n\n.Translate {\n  text-align: right;\n  font-size: 14px; }\n\n.unselected {\n  border-bottom: 10px solid red; }\n"
+module.exports = ".menu {\n  width: 100%; }\n\nnav {\n  width: 100%;\n  border-bottom: 10px solid #82b5a4; }\n\nnav a {\n  text-align: center; }\n\nnav a:hover {\n  background-color: #71a81d; }\n\n.is-active {\n  border-left: 5px solid grey;\n  border-right: 5px solid grey;\n  border-bottom: 10px solid white; }\n\n.Translate {\n  text-align: right;\n  font-size: 14px; }\n\n.unselected {\n  border-bottom: 10px solid red; }\n"
 
 /***/ }),
 
