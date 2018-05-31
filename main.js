@@ -104,23 +104,31 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/esm5/ngx-translate-core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+    function AppComponent(translate) {
+        this.translate = translate;
         this.title = 'app';
+        translate.setDefaultLang('en');
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__["TranslateService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -176,7 +184,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 function HttpLoaderFactory(http) {
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_9__["TranslateHttpLoader"](http);
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_9__["TranslateHttpLoader"](http, './assets/i18n/', '.json');
 }
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -269,7 +277,7 @@ module.exports = "<!--component html goes here -->\r\n<div class=\"menu\">\r\n<d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".menu {\n  width: 100%; }\n\nnav {\n  width: 100%;\n  margin-bottom: 10%; }\n\nnav a {\n  text-align: center;\n  padding: 10px; }\n\nis-not-selected {\n  border-bottom: 10px solid #82b5a4; }\n\nnav a:hover {\n  background-color: #71a81d; }\n\n.is-active {\n  border-left: 5px solid grey;\n  border-right: 5px solid grey;\n  border-bottom: 10px solid white; }\n\n.Translate {\n  text-align: right;\n  font-size: 14px; }\n\n.unselected {\n  border-bottom: 10px solid red; }\n"
+module.exports = ".menu {\n  width: 100%; }\n\nnav {\n  width: 100%;\n  margin-bottom: 10%; }\n\nnav a {\n  text-align: center;\n  padding: 10px; }\n\n.is-not-selected {\n  border-bottom: 10px solid #82b5a4; }\n\nnav a:hover {\n  background-color: #71a81d; }\n\n.is-active {\n  border-left: 5px solid grey;\n  border-right: 5px solid grey;\n  border-bottom: 10px solid white; }\n\n.Translate {\n  text-align: right;\n  font-size: 14px; }\n\n.unselected {\n  border-bottom: 10px solid red; }\n"
 
 /***/ }),
 
