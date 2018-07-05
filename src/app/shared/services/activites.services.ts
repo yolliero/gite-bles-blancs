@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 export class ActivitiesServices {
     constructor(private http: HttpClient) { }
 
- private url  = 'http://datarmor.cotesdarmor.fr:80/dataserver/cg22/data/AGENDA?&$format=json');
+ private url  = 'http://datarmor.cotesdarmor.fr:80/dataserver/cg22/data/AGENDA?&$format=json';
 
 
 
