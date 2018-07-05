@@ -15,6 +15,8 @@ import { RouterModule } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './pages/home/home.component';
 import { GiteComponent } from './pages/gite/gite.component';
+import { ActivitiesModule } from './pages/activities/activities.module';
+import { ActivitiesServices } from './shared/services/activites.services';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -61,8 +63,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    GiteComponent
-  ],
+    GiteComponent,
+      ],
   exports: [
     MatAutocompleteModule,
     MatBadgeModule,
@@ -101,6 +103,7 @@ export function HttpLoaderFactory(http: HttpClient) {
    ],
   imports: [
     BrowserModule,
+    ActivitiesModule,
     MatToolbarModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -114,7 +117,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     MatCardModule
   ],
-  providers: [],
+  providers: [ActivitiesServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
