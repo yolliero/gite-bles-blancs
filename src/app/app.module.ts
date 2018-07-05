@@ -4,7 +4,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarToolbarComponent } from './home/toolbar-toolbar/toolbar-toolbar.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
 
 import 'hammerjs';
 
@@ -59,7 +59,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarToolbarComponent,
+    NavbarComponent,
     HomeComponent,
     GiteComponent
   ],

@@ -5,11 +5,11 @@ import { Router, RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 @Component({
-    selector: 'toolbar-toolbar',
-    templateUrl: 'toolbar-toolbar.component.html',
-    styleUrls: ['toolbar-toolbar.component.scss']
+    selector: 'app-navbar',
+    templateUrl: 'navbar.component.html',
+    styleUrls: ['navbar.component.scss']
 })
-export class ToolbarToolbarComponent   {
+export class NavbarComponent   {
     public href: String = '';
 
     constructor(private translate: TranslateService,
