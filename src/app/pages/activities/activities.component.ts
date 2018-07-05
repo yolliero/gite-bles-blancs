@@ -18,5 +18,6 @@ export class ActivitiesComponent implements OnInit {
             console.log(result);
             this.agenda = result;
 
-     }
+     });
+}
 }
